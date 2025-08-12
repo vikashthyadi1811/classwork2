@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - Online Exam Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">ExamPortal</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="login.html">Login</a></li>
+                <li class="nav-item"><a href="register.html">Register</a></li>
+                <li class="nav-item"><a href="test.html" class="active">Take Test</a></li>
+                <li class="nav-item"><a href="results.html">Results</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Test Content -->
+    <div class="container">
+        <!-- Test Header based on sketch -->
+        <header class="test-header">
+            <div class="test-header-item">Name: <span>John Doe</span></div>
+            <div class="test-header-item">Year: <span>3rd</span></div>
+            <div class="test-header-item">Course Code: <span>CS301</span></div>
+            <div class="test-header-item">Course Name: <span>Data Structures</span></div>
+            <div class="test-header-item">Semester: <span>6th</span></div>
+            <div class="test-header-item">Duration: <span>60 mins</span></div>
+            <div class="test-header-item">Regulation: <span>R19</span></div>
+            <div class="test-header-item">Roll No: <span>123456789</span></div>
+        </header>
+
+        <!-- Question Area -->
+        <div class="question-area">
+            <h2>Answer all Questions</h2>
+
+            <!-- Question 1 -->
+            <div class="question-block">
+                <p class="question-title">1. What is the time complexity of a binary search algorithm?</p>
+                <ul class="question-options">
+                    <li class="option"><label><input type="radio" name="q1"> O(n)</label></li>
+                    <li class="option"><label><input type="radio" name="q1"> O(log n)</label></li>
+                    <li class="option"><label><input type="radio" name="q1"> O(n^2)</label></li>
+                    <li class="option"><label><input type="radio" name="q1"> O(1)</label></li>
+                </ul>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-block">
+                <p class="question-title">2. Which data structure uses the LIFO (Last-In, First-Out) principle?</p>
+                <ul class="question-options">
+                    <li class="option"><label><input type="radio" name="q2"> Queue</label></li>
+                    <li class="option"><label><input type="radio" name="q2"> Linked List</label></li>
+                    <li class="option"><label><input type="radio" name="q2"> Stack</label></li>
+                    <li class="option"><label><input type="radio" name="q2"> Tree</label></li>
+                </ul>
+            </div>
+            
+            <!-- Add more questions as needed -->
+
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="test-actions">
+            <button type="submit" class="btn btn-submit">Submit</button>
+            <button type="reset" class="btn btn-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Online Examination Portal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
