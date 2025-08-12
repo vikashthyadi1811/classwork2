@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Online Exam Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">ExamPortal</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="login.html">Login</a></li>
+                <li class="nav-item"><a href="register.html">Register</a></li>
+                <li class="nav-item"><a href="test.html">Take Test</a></li>
+                <li class="nav-item"><a href="results.html" class="active">Results</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Results Content -->
+    <div class="container">
+        <h1>Check Your Results</h1>
+        
+        <!-- Search Form -->
+        <form class="form-container" style="box-shadow: none; padding: 20px 0;">
+             <div class="form-group">
+                <label for="rollno">Enter Your Roll Number</label>
+                <input type="text" id="rollno" name="rollno" placeholder="e.g., 123456789" required>
+            </div>
+            <button type="submit" class="form-button">Get Results</button>
+        </form>
+
+        <!-- Results Table -->
+        <div class="results-display">
+            <h2>Results for Roll No: 123456789</h2>
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Grade Point</th>
+                        <th>Credits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>CS301</td>
+                        <td>Data Structures</td>
+                        <td>9</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>MA302</td>
+                        <td>Mathematics III</td>
+                        <td>8</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>EC303</td>
+                        <td>Digital Circuits</td>
+                        <td>9</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>HU304</td>
+                        <td>Humanities</td>
+                        <td>10</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- GPA Section -->
+            <div class="gpa-section">
+                <p>SGPA: <span>9.0</span></p>
+                <p>CGPA: <span>8.8</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Online Examination Portal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
